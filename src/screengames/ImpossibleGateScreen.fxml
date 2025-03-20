@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="403.0" fitWidth="716.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0" translateY="-2.0">
+         <image>
+            <Image url="@images/Background_1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" translateX="200.0" translateY="-250.0">
+         <image>
+            <Image url="@images/Brick_1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8" translateX="50.0" translateY="-335.0">
+         <image>
+            <Image url="@images/Enemy2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="0.6" scaleY="0.6" translateY="-175.0">
+         <image>
+            <Image url="@Images/Missile.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</FlowPane>

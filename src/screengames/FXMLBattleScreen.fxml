@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screengames.ScreenGameController">
+   <children>
+      <ImageView fitHeight="305.0" fitWidth="600.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/BattleBackground.png" />
+         </image>
+      </ImageView>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <bottom>
+            <FlowPane prefHeight="122.0" prefWidth="603.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextArea editable="false" prefHeight="0.0" prefWidth="299.0" text="Select Power Up to Use:">
+                     <FlowPane.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </FlowPane.margin>
+                     <font>
+                        <Font name="Impact" size="27.0" />
+                     </font>
+                  </TextArea>
+                  <GridPane prefHeight="119.0" prefWidth="285.0">
+                    <columnConstraints>
+                      <ColumnConstraints />
+                      <ColumnConstraints />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.33333333333334" minWidth="10.0" prefWidth="134.66670735677084" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.33331298828128" minWidth="0.0" prefWidth="134.66662597656253" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#powerup1" prefHeight="39.0" prefWidth="135.0" text="PowerUp 1" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Impact" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#powerup2" prefHeight="39.0" prefWidth="135.0" text="PowerUp 2" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Impact" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#powerup3" prefHeight="39.0" prefWidth="135.0" text="PowerUp 3" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Impact" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#powerup4" prefHeight="39.0" prefWidth="135.0" text="PowerUp 4" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Impact" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </GridPane>
+               </children>
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+            </FlowPane>
+         </bottom>
+         <left>
+            <BorderPane prefHeight="285.0" prefWidth="306.0" BorderPane.alignment="CENTER">
+               <top>
+                  <FlowPane alignment="CENTER_LEFT" prefHeight="80.0" prefWidth="306.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <FlowPane alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="230.0" rowValignment="BASELINE" style="-fx-background-color: grey;">
+                           <FlowPane.margin>
+                              <Insets top="15.0" />
+                           </FlowPane.margin>
+                           <children>
+                              <GridPane prefHeight="51.0" prefWidth="229.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="115.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="72.33334350585938" minWidth="10.0" prefWidth="59.33333333333333" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.33334350585938" minWidth="10.0" prefWidth="64.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TextField alignment="CENTER" editable="false" prefHeight="51.0" prefWidth="120.0" text="Monster Info">
+                                       <font>
+                                          <Font name="Impact" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <ImageView fitHeight="52.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@images/monsterStarB.png" />
+                                       </image></ImageView>
+                                    <ImageView fitHeight="54.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                                       <image>
+                                          <Image url="@images/mosnterLvlB.png" />
+                                       </image></ImageView>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </FlowPane>
+               </top>
+               <left>
+                  <GridPane prefHeight="187.0" prefWidth="70.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <FlowPane alignment="CENTER" prefHeight="19.0" prefWidth="70.0">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/mosnterSpare2.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="13.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/monsterSpareBar2.png" />
+                                 </image></ImageView>
+                           </children></FlowPane>
+                        <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/mosnterSpare2.png" />
+                                 </image></ImageView>
+                              <ImageView fitHeight="13.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@imgages/monsterSpareBar2.png" />
+                                 </image></ImageView>
+                           </children></FlowPane>
+                     </children>
+                  </GridPane>
+               </left>
+               <right>
+                  <FlowPane alignment="CENTER" prefHeight="187.0" prefWidth="221.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="monster" fitHeight="128.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/monsterSQ2.png" />
+                           </image></ImageView>
+                        <GridPane prefHeight="11.0" prefWidth="169.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.33331298828125" minWidth="10.0" prefWidth="87.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="99.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="33.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/monsterHealthB2.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="34.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@images/monsterEnergyB2.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </FlowPane>
+               </right>
+            </BorderPane>
+         </left>
+         <right>
+            <BorderPane prefHeight="279.0" prefWidth="294.0" BorderPane.alignment="CENTER">
+               <bottom>
+                  <FlowPane alignment="CENTER_RIGHT" prefHeight="54.0" prefWidth="294.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <FlowPane alignment="CENTER_RIGHT" columnHalignment="RIGHT" prefHeight="75.0" prefWidth="230.0" rowValignment="TOP" style="-fx-background-color: grey;">
+                           <FlowPane.margin>
+                              <Insets />
+                           </FlowPane.margin>
+                           <children>
+                              <GridPane prefHeight="51.0" prefWidth="229.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="58.33333333333333" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.33333333333333" minWidth="10.0" prefWidth="57.00001017252605" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.33328247070312" minWidth="10.0" prefWidth="115.66665649414062" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <TextField alignment="CENTER" editable="false" prefHeight="51.0" prefWidth="120.0" text="Enemy Info" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font name="Impact" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <ImageView fitHeight="41.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                                    <ImageView fitHeight="41.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fitHeight="52.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                       <image>
+                                          <Image url="@images/monsterStarB.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="54.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/mosnterLvlB.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </FlowPane>
+               </bottom>
+               <right>
+                  <GridPane prefHeight="198.0" prefWidth="70.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/mosnterSpare2.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="13.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/monsterSpareBar2.png" />
+                                 </image>
+                              </ImageView>
+                           </children></FlowPane>
+                        <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fitHeight="65.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/mosnterSpare2.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="13.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/monsterSpareBar2.png" />
+                                 </image>
+                              </ImageView>
+                           </children></FlowPane>
+                     </children>
+                  </GridPane>
+               </right>
+               <left>
+                  <FlowPane alignment="CENTER" prefHeight="198.0" prefWidth="220.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="131.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/monsterSQ2.png" />
+                           </image>
+                        </ImageView>
+                        <GridPane prefHeight="10.0" prefWidth="185.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="33.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/monsterHealthB2.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                    <Image url="@images/monsterEnergyB2.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </FlowPane>
+               </left>
+            </BorderPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

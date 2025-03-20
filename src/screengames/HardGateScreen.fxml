@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screengames.HardGateScreenController">
+   <children>
+      <ImageView fitHeight="340.0" fitWidth="605.0" pickOnBounds="true" preserveRatio="true" scaleY="1.4" translateY="60.0">
+         <image>
+            <Image url="@images/Background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" translateY="-118.0">
+         <image>
+            <Image url="@images/MainCharac.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" translateX="60.0" translateY="-103.0">
+         <image>
+            <Image url="@images/Brick.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="75.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true" translateX="300.0" translateY="-103.0">
+         <image>
+            <Image url="@images/Brick.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="75.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true" translateX="95.0" translateY="-103.0">
+         <image>
+            <Image url="@images/Brick.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="185.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true" translateX="40.0" translateY="-156.0">
+         <image>
+            <Image url="@images/Brick.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="0.5" scaleY="0.5" translateX="-45.0" translateY="-220.0">
+         <image>
+            <Image url="@images/Enemy.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="151.0" fitWidth="295.0" pickOnBounds="true" preserveRatio="true" scaleX="0.3" scaleY="0.3" translateX="-35.0" translateY="-250.0">
+         <image>
+            <Image url="@images/Monster2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" scaleX="0.2" scaleY="0.2" translateX="-170.0" translateY="-300.0">
+         <image>
+            <Image url="@images/Power.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" translateY="-650.0">
+         <image>
+            <Image url="@images/Monsters.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="45.0" onMouseClicked="#switchToInventoryScreen" pickOnBounds="true" preserveRatio="true" translateX="-200.0" translateY="-310.0">
+         <image>
+            <Image url="@images/Backpack.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</FlowPane>
